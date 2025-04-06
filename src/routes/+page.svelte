@@ -102,7 +102,7 @@
             </div>
         </div>
         <div class="mb-4">
-            ราคาเปลี่ยนแปลง <input bind:value={percentChange} type="number" id="addPercent" class="textbox w-[8rem] not-italic" disabled> %
+            ราคาเปลี่ยนแปลง <input bind:value={percentChange} type="number" id="addPercent" class="textbox w-[8rem] not-italic placeholder:text-gray-600" placeholder="XX.XX" disabled> %
         </div>
         <button class="mb-4 p-2 bg-gray-700 not-disabled:hover:bg-gray-700/70 not-disabled:active:bg-gray-700/30 disabled:text-gray-600 rounded-sm" disabled={calculating} on:click={calculate}>คำนวณ</button>
         {#if error}
@@ -110,6 +110,7 @@
         {/if}
         <div class="text-[1rem]">
             ข้อมูลจาก <a class="text-gray-400 hover:text-gray-600 underline" href="https://index.tpso.go.th/cpi">สำนักงานนโยบายและยุทธศาสตร์การค้า</a><br>
+            สามารถเข้าดู Source Code ได้บน <a class="text-gray-400 hover:text-gray-600 underline" href="https://github.com/supern64/thaicpi">GitHub</a><br>
             <span class="italic">*ใช้ข้อมูลของสินค้าและบริการรวมทุกประเภท และรวมทุกภูมิภาคของประเทศไทย</span>
         </div>
     </div>
