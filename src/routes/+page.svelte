@@ -5,6 +5,8 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="language" content="Thai">
+
+    <title>เครื่องคำนวณเงินเฟ้อไทย</title>
 </svelte:head>
 <script lang="ts">
     import {  MONTH_NAMES, type AvailablePeriod } from "$lib/constants";
