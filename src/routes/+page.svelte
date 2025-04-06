@@ -6,6 +6,18 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="language" content="Thai">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="เครื่องคำนวณเงินเฟ้อไทย">
+    <meta property="og:url" content="https://thaicpi.cirnoslab.me">
+    <meta property="og:image" content="https://thaicpi.cirnoslab.me/logo.png">
+    <meta property="og:description" content="คำนวณเงินเฟ้อและมูลค่าของสิ่งของในประเทศไทยรายเดือน ตามข้อมูล CPI">
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://thaicpi.cirnoslab.me" />
+    <meta property="twitter:title" content="เครื่องคำนวณเงินเฟ้อไทย" />
+    <meta property="twitter:description" content="คำนวณเงินเฟ้อและมูลค่าของสิ่งของในประเทศไทยรายเดือน ตามข้อมูล CPI" />
+    <meta property="twitter:image" content="https://thaicpi.cirnoslab.me/logo.png" />
+    
     <title>เครื่องคำนวณเงินเฟ้อไทย</title>
 </svelte:head>
 <script lang="ts">
@@ -120,6 +132,7 @@
         {/if}
         <div class="text-[1rem]">
             ข้อมูลจาก <a class="text-gray-400 hover:text-gray-600 underline" href="https://index.tpso.go.th/cpi">สำนักงานนโยบายและยุทธศาสตร์การค้า</a><br>
+            Icon จาก <a class="text-gray-400 hover:text-gray-600 underline" href="https://www.flaticon.com/free-icons/chart" title="chart icons">ioKanda (flaticon)</a><br>
             สามารถเข้าดู Source Code ได้บน <a class="text-gray-400 hover:text-gray-600 underline" href="https://github.com/supern64/thaicpi">GitHub</a><br>
             <span class="italic">*ใช้ข้อมูลของสินค้าและบริการรวมทุกประเภท และรวมทุกภูมิภาคของประเทศไทย</span>
         </div>
