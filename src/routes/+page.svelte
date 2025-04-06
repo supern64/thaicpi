@@ -1,3 +1,11 @@
+<svelte:head>
+    <meta name="title" content="เครื่องคำนวณเงินเฟ้อไทย">
+    <meta name="description" content="คำนวณเงินเฟ้อและมูลค่าของสิ่งของในประเทศไทยรายเดือน ตามข้อมูล CPI">
+    <meta name="keywords" content="เงิน,เงินเฟ้อ,CPI,ไทย,ค่าครองชีพ,มูลค่า">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="language" content="Thai">
+</svelte:head>
 <script lang="ts">
     import {  MONTH_NAMES, type AvailablePeriod } from "$lib/constants";
 
@@ -83,7 +91,7 @@
             <div class="flex gap-4 min-md:justify-end max-sm:mb-4 max-sm:justify-center flex-wrap">
                 <div class="grow-0 justify-end">
                     จะต้องใช้เงิน
-                    <input type="number" bind:value={finPrice} id="finPrice" class="textbox w-[8rem] not-italic placeholder:text-gray-600" disabled placeholder="ราคาปีนี้">
+                    <input type="text" bind:value={finPrice} id="finPrice" class="textbox w-[8rem] not-italic placeholder:text-gray-600" disabled placeholder="ราคาปีนี้">
                     บาท
                 </div>
                 <div class="grow-0">
@@ -102,9 +110,9 @@
             </div>
         </div>
         <div class="mb-4">
-            ราคาเปลี่ยนแปลง <input bind:value={percentChange} type="number" id="addPercent" class="textbox w-[8rem] not-italic placeholder:text-gray-600" placeholder="XX.XX" disabled> %
+            ราคาเปลี่ยนแปลง <input bind:value={percentChange} type="text" id="addPercent" class="textbox w-[8rem] not-italic placeholder:text-gray-600" placeholder="XX.XX" disabled> %
         </div>
-        <button class="mb-4 p-2 bg-gray-700 not-disabled:hover:bg-gray-700/70 not-disabled:active:bg-gray-700/30 disabled:text-gray-600 rounded-sm" disabled={calculating} on:click={calculate}>คำนวณ</button>
+        <button class="mb-4 p-2 important:text-gray-200 bg-gray-700 not-disabled:hover:bg-gray-700/70 not-disabled:active:bg-gray-700/30 disabled:text-gray-600 rounded-sm" disabled={calculating} on:click={calculate}>คำนวณ</button>
         {#if error}
             <div class="text-red-500 mb-4">{error}</div>
         {/if}
