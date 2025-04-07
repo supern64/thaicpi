@@ -126,7 +126,7 @@
         <div class="mb-4">
             ราคาเปลี่ยนแปลง <input bind:value={percentChange} type="text" id="addPercent" class="textbox w-[8rem] not-italic placeholder:text-gray-600" placeholder="XX.XX" disabled> %
         </div>
-        <button class="mb-4 p-2 important:text-gray-200 bg-gray-700 not-disabled:hover:bg-gray-700/70 not-disabled:active:bg-gray-700/30 disabled:text-gray-600 rounded-sm" disabled={calculating} on:click={calculate}>คำนวณ</button>
+        <button class="mb-4 p-2 !text-gray-200 bg-gray-700 not-disabled:hover:bg-gray-700/70 not-disabled:active:bg-gray-700/30 disabled:!text-gray-600 rounded-sm" disabled={calculating} on:click={calculate}>คำนวณ</button>
         {#if error}
             <div class="text-red-500 mb-4">{error}</div>
         {/if}
